@@ -66,5 +66,11 @@ class CatRepositoryTest {
 		Optional<Cat> catFound = repository.findByNameLike("mel");
 		assertEquals("mel", catFound.get().getName());
 	}
+	
+	@Test
+	void whenFindingCatsOlderThanSpecificAge_thenCorrect() {
+		List<Cat> listOfCatsOlderThan = repository.getCatsOlderThan(0);
+		assertTrue(listOfCatsOlderThan.size() > 0);
+	}
 
 }
