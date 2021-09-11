@@ -1,0 +1,2 @@
+Error: Could not find or load main class org.hsqldb.server.Server
+Caused by: java.lang.ClassNotFoundException: org.hsqldb.server.Server
